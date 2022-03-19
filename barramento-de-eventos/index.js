@@ -1,10 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const axios = require('axios');
 //para enviar eventos para os demais microsserviços
 const axios = require('axios');
 
 const app = express();
 app.use(bodyParser.json());
+app.put("/lembretes", async (req,res) => {
+    //COMPLETAR
+});
 
 app.post('/eventos', (req,res) => {
     const evento = req.body;
