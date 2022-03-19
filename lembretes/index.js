@@ -1,7 +1,7 @@
 const express = require ('express');
 const bodyParser = require ('body-parser');
 const app = express();
-app.arguments(bodyParser.json());
+app.use(bodyParser.json());
 const lembretes = {};
 contador = 0;
 
